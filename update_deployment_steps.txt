@@ -1,0 +1,6 @@
+# Refresh the mbround18/valheim image. This does not replace the existing "latest" tag so it may need to be manually deleted.
+az acr import --name <replace with your registry name> --source docker.io/mbround18/valheim:latest --image mbround18/valheim:latest
+
+# Full deployment. This will also restart the container (not gracefully).
+az deployment sub validate --location eastus --template-file .\main.bicep --parameters .\main.parameters.json
+az deployment sub create --location eastus --template-file .\main.bicep --parameters .\main.parameters.json
