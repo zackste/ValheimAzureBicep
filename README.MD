@@ -1,3 +1,10 @@
+# _Disclaimer_
+Fork needs further cleanup. This fork configures more resources than the original for a more complete deployment, but it conflicts with much of the original design in its current state.
+* Clean up.
+* Componentize more resources into appropriate modules.
+* lloesche and mbround18 image solutions need to be able to co-exist.
+* Need parameters file template.
+
 # Valheim Dedicated Server Bicep Template
 [Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep) templates to generate Azure resource group and resources needed for hosting Valheim dedicated server.
 
